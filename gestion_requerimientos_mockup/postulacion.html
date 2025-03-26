@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Postularse a Requerimiento</title>
+  <link href="css/style.css" rel="stylesheet"/>
+</head>
+<body>
+  <header>
+    <h1>Postularse a Requerimiento</h1>
+  </header>
+  <main>
+    <div class="requerimiento-info">
+      <h3>Instalación de cámaras de seguridad</h3>
+      <p><strong>Ubicación:</strong> Monterrey, NL</p>
+      <p><strong>Presupuesto:</strong> $5,000 MXN</p>
+      <p><strong>Descripción:</strong> Instalación de 4 cámaras exteriores y 2 interiores.</p>
+    </div>
+
+    <form>
+      <label for="mensaje">Mensaje *</label>
+      <textarea id="mensaje" required></textarea>
+
+      <label for="tiempo">Tiempo estimado *</label>
+      <input type="text" id="tiempo" required>
+
+      <label for="costo">Costo estimado *</label>
+      <input type="number" id="costo" required>
+
+      <label for="archivo">Archivo adjunto</label>
+      <input type="file" id="archivo">
+
+      <div class="form-actions">
+        <a href="index.html" class="btn btn-secondary">Cancelar</a>
+        <button class="btn btn-primary" type="submit">Enviar</button>
+      </div>
+    </form>
+  </main>
+</body>
+</html>

@@ -1,0 +1,73 @@
+
+* { box-sizing: border-box; font-family: 'Inter', sans-serif; }
+body { margin: 0; background: #f9f9f9; color: #333; }
+header { background: #004b8d; color: white; padding: 1rem 2rem; }
+h1 { margin: 0; font-size: 1.6rem; }
+main { padding: 2rem; max-width: 900px; margin: auto; background: white; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.05); }
+.top-bar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; }
+/*.btn { padding: 0.6rem 0.6rem; background-color: #0077cc; color: white; border-radius: 5px; text-decoration: none; font-weight: 600; }*/
+.btn {
+    padding: 0.25rem 0.5rem;       /* Menor relleno interno */
+    background-color: #0077cc;
+    color: white;
+    border-radius: 4px;            /* Ligeramente más sutil */
+    text-decoration: none;
+    font-weight: 500;              /* Más ligero visualmente */
+    font-size: 0.85rem;            /* Tamaño de fuente reducido */
+    line-height: 1.2;
+  }
+.btn:hover { background-color: #005fa3; }
+.btn-primary { background-color: #28a745; }
+.btn-secondary { background-color: #ccc; color: #333; }
+table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+th, td { padding: 1rem; text-align: left; border-bottom: 1px solid #eee; }
+th { background-color: #f1f1f1; }
+.status { padding: 0.3rem 0.7rem; border-radius: 4px; font-size: 0.9rem; font-weight: 600; display: inline-block; }
+.status.abierto { background: #e0f8e9; color: #28a745; }
+/*.action-btns .btn { margin-right: 0.6rem; }*/
+.action-btns .btn {
+    margin-right: 0.3rem;  /* Reduce el espacio entre botones */
+    padding: 0.25rem 0.5rem;
+    font-size: 0.85rem;
+    line-height: 1.2;
+    border-radius: 4px;
+  }
+
+  th.action-btns,
+  td.action-btns {
+    min-width: 180px;        /* Ajusta según número de botones */
+    white-space: nowrap;     /* Evita que los botones se vayan a nueva línea */
+    text-align: left;        /* Opcional: alinea a la izquierda */
+  }
+  
+  td.action-btns {
+    display: flex;
+    justify-content: flex-start;  /* Alinea botones a la izquierda */
+    align-items: center;
+    gap: 0.3rem;                  /* Espacio entre botones */
+    padding: 0.5rem 1rem;         /* Ajusta si deseas más aire */
+    min-height: 100%;              /* Asegura que tome toda la altura de la celda */
+    height: 100%;                  /* Adicional para mayor compatibilidad */
+  
+  }
+  
+  
+form label { display: block; margin-top: 1rem; font-weight: 600; }
+input, select, textarea { width: 100%; padding: 0.7rem; margin-top: 0.4rem; border: 1px solid #ccc; border-radius: 5px; font-size: 1rem; }
+textarea { resize: vertical; min-height: 100px; }
+/*.form-actions { margin-top: 2rem; display: flex; justify-content: flex-end; gap: 1rem;}*/
+.form-actions {
+    margin-top: 1rem;               /* Menor margen superior */
+    display: flex;
+    justify-content: flex-end;      /* Alineados a la derecha */
+    gap: 0.5rem;                    /* Menor espacio entre ellos */
+    flex-wrap: nowrap;             /* Evita que salten de renglón */
+  }
+  
+  .form-actions button {
+    padding: 0.25rem 0.75rem;       /* Botón más pequeño */
+    font-size: 0.85rem;             /* Letra más chica */
+    line-height: 1.2;
+  }
+  
+.requerimiento-info { background: #eef3f7; padding: 1rem; border-left: 5px solid #0077cc; border-radius: 5px; margin-bottom: 2rem; }

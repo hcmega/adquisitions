@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nuevo Requerimiento</title>
+  <link href="css/style.css" rel="stylesheet"/>
+</head>
+<body>
+  <header>
+    <h1>Nuevo Requerimiento</h1>
+  </header>
+  <main>
+    <form>
+      <label for="titulo">Título del requerimiento *</label>
+      <input type="text" id="titulo" placeholder="Ej. Instalación de cámaras de seguridad" required>
+
+      <label for="descripcion">Descripción detallada *</label>
+      <textarea id="descripcion" required></textarea>
+
+      <label for="categoria">Categoría *</label>
+      <select id="categoria" required>
+        <option>Tecnología</option>
+        <option>Construcción</option>
+      </select>
+
+      <label for="ubicacion">Ubicación *</label>
+      <input type="text" id="ubicacion" required>
+
+      <label for="presupuesto">Presupuesto estimado</label>
+      <input type="number" id="presupuesto">
+
+      <label for="fecha">Fecha deseada</label>
+      <input type="date" id="fecha">
+
+      <label for="mostrarContacto">¿Mostrar mis datos de contacto?</label>
+      <select id="mostrarContacto">
+        <option>Sí</option>
+        <option>No</option>
+      </select>
+
+      <div class="form-actions">
+        <a href="index.html" class="btn btn-secondary">Cancelar</a>
+        <button class="btn btn-primary" type="submit">Guardar</button>
+      </div>
+    </form>
+  </main>
+</body>
+</html>
